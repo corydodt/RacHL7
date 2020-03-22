@@ -10,7 +10,7 @@ fn parse(a: usize, b: usize) -> PyResult<String> {
 
 
 #[pyfunction]
-// hello a world
+/// Say hello to a world.
 fn hellow() -> PyResult<()> {
     println!("Hello, world!");
     Ok(())

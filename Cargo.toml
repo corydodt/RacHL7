@@ -1,11 +1,13 @@
 [package]
-name = "string-sum"
-version = "0.1.0"
+name = "rachl7"
+version = "0.0.0"
 edition = "2018"
+authors = ["Cory Dodt <@>"]
 
 [lib]
-name = "string_sum"
+name = "_rachl7"
 crate-type = ["cdylib"]
+path = "src/_rachl7.rs"
 
 [dependencies.pyo3]
 version = "0.9.0"

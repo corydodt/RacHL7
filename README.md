@@ -1,6 +1,14 @@
 # RacHL7
 
-### a Rust HL7 parser
+### a Rusty HL7 parser
+
+## Maintainers
+
+Run `pip install ".[dev,deploy]"` 
+
+`setup.py` cannot run on its own before this step. `pyproject.toml` fixes
+that by installing the prerequisite `setuptools-rust`.
+
 
 ## Beginner rust guide
 

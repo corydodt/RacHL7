@@ -1,5 +1,10 @@
+/.pytest_cache
 /build/
 /dist/
 /target/
 RacHL7.egg-info
 __pycache__
+
+# community recommends ignoring Cargo.lock for libraries, which this is
+/Cargo.lock
+/src/*.so

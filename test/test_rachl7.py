@@ -15,5 +15,5 @@ def hl7document():
 
 
 def test_parse(hl7document):
-    rachl7.parse()
+    assert rachl7.parse(1, 18) == "19"
     assert 0, "nothing here yet"

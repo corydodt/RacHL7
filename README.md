@@ -4,7 +4,7 @@
 
 ## Maintainers
 
-Run `pip install ".[dev,deploy]"` 
+Run `pip install ".[dev,deploy]"`
 
 `setup.py` cannot run on its own before this step. `pyproject.toml` fixes
 that by installing the prerequisite `setuptools-rust`.

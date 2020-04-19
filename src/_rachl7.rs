@@ -19,7 +19,7 @@ fn hellow() -> PyResult<()> {
 
 #[pymodule]
 /// A Python module implemented in Rust.
-fn _rachl7(py: Python, m: &PyModule) -> PyResult<()> {
+fn _rachl7(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(parse))?;
     m.add_wrapped(wrap_pyfunction!(hellow))?;
 

@@ -10,6 +10,13 @@ Run `pip install ".[dev,deploy]"`
 that by installing the prerequisite `setuptools-rust`.
 
 
+## Use
+
+```
+import rachl7
+```
+
+
 ## Beginner rust guide
 
 1. uninstall rustc from apt

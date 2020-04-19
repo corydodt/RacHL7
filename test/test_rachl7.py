@@ -15,5 +15,10 @@ def hl7document():
 
 
 def test_parse(hl7document):
-    assert rachl7.parse(1, 18) == "19"
-    assert 0, "nothing here yet"
+    """
+    Is the expression parseable?
+    """
+    assert rachl7.parse("22")
+    assert rachl7.parse("(22)")
+    assert rachl7.parse("((((22))))")
+    assert not rachl7.parse("((22)")

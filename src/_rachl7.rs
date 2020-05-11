@@ -10,7 +10,7 @@ lalrpop_mod!(pub calculator1); // synthesized by LALRPOP
 #[pyfunction]
 /// Parse the string expression and return t/f for whether it is parseable
 fn parse(data: &str) -> PyResult<bool> {
-    Ok(calculator1::TermParser::new().parse(data).is_ok())
+    Ok(calculator1::ExprParser::new().parse(data).is_ok())
 }
 
 
